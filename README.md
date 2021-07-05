@@ -1,23 +1,26 @@
-# Venture Funding Prediction Model
+# Machine Learning AlgoTrading
 
-Alphabet Soup is a fictional venture capital firm that receives multiple funding applications from startups every day. With the utilization of data containing information from past applicants, this module attempts to create a neural network model which will predict which startups will be successful.
+This notebook consists of analyzing the cumulative returns of two different machine learning algorithms for AlgoTrading.
 
-![Venture_Funding_Prediction_Model](https://github.com/ScientiaCapital/Venture-Funding-Deep-Learning-Model/blob/main/Resources/vcimage1.jpeg)
+![Machine_Learning_AlgoTrading]()
 
 ---
 
 ## Technologies
 
-The entirety of this notebook was generated via Google Colab. Therefore, you are not required to import any modules onto your personal machine. Below is a list containing all of the Python 3.7 + modules that are utilized in this notebook.
+Before attempting to execute any Python code in machine_learning_trading_bot.ipynb, it is imperative that your development environment holds the following modules:
 
 [pandas](https://pandas.pydata.org/pandas-docs/stable/) - Data analysis module
 
+[numpy](https://numpy.org/install/) - Numerical computing module
+
 [pathlib](https://docs.python.org/3/library/pathlib.html) - Object-oriented filesystem path module
 
+[hvplot](https://hvplot.holoviz.org/) - Interactive plotting module
+
+[matplotlib](https://matplotlib.org/) - Plotting module
+
 [sklearn](https://sklearn.org/) - Machine learning module
-
-[tensorflow](https://pypi.org/project/tensorflow/) - High-performance numerical computation library
-
 
 ---
 
@@ -27,21 +30,44 @@ With your _Python 3.7+_ environment, run the following commands via CLI:
 
 ```
 import pandas as pd
+import numpy as np
 from pathlib import Path
-import tensorflow as tf
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.models import Sequential
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler,OneHotEncoder
+import hvplot.pandas
+import matplotlib.pyplot as plt
+from sklearn import svm
+from sklearn.preprocessing import StandardScaler
+from pandas.tseries.offsets import DateOffset
+from sklearn.metrics import classification_report
+from sklearn import tree
+
 ```
 
 ---
 
 ## Examples
 
-![Example_One](https://github.com/ScientiaCapital/Venture-Funding-Deep-Learning-Model/blob/main/Resources/Screen%20Shot%202021-06-24%20at%208.08.01%20AM.png)
+![Example_One]()
 
-![Example_Two](https://github.com/ScientiaCapital/Venture-Funding-Deep-Learning-Model/blob/main/Resources/Screen%20Shot%202021-06-24%20at%208.08.41%20AM.png)
+![Example_Two]()
+
+---
+
+## Conclusion
+
+Within this notebook, two machine learning algorithms (SVC classifier model and Decision Tree) were carried out for the purpose of evaluating their effectiveness within the realm of algorithmic trading. For the sake of consistency and effective analysis, the long and short trading windows retained their size across both algorithms and the training / testing data remained identical. The plot below showcases the cumulative returns of both the SVC classifier model and Decision Tree model across the same time period. From this, we can conclude that the trading strategy based off of the SVC model proves to be much more effective in generating cumulative returns for the OHLVC dataset as a baseline model.
+
+For the purposes of uncovering the most profitable trading algorithm, the training timeframe was altered from 3 months to 1 months. As can be seen in the Updated Comparison plots, the Decision Tree model outperforms the SVC model prominently from mid-2018 towards the end of 2020 in terms of cumulative returns.
+
+---
+
+## Baseline
+
+![Example_Three]()
+
+
+## Updated Comparison
+
+![Example_Four]()
 
 ---
 
@@ -49,13 +75,10 @@ from sklearn.preprocessing import StandardScaler,OneHotEncoder
 
 1. Clone repository onto your personal machine.
 
-2. Open Google Colab.
+2. Open Jupyter Lab or Jupyter Notebook via Anaconda Navigator and navigate to the directory in which the file machine_learning_trading_bot.ipynb is present. All relevant code for this repository will be executed via Jupyter Notebook and no output will be printed to the command line. Ensure that all relevant dependencies and Python modules are installed (see Technologies and Installation Guide for more details) before attempting to execute code within Jupyter Notebook; otherwise, you will receive multiple interpreter errors!
 
-3. Open venture_funding_with_deep_learning.ipynb within Google Colab.
+3. With the notebook open, start at the very first cell reading "Machine Learning Trading Bot" (a cell will be active when a rectangular border is surrounding the area in question). Run each cell in sequential order. It is vital that all cells are ran in sequential order or your notebook will generate compiler errors!
 
-4. During the section in which the .csv file applicants_data.csv is imported, ensure that this file is present on your personal machine from the repository cloning in Step 1.
-
-5. With the notebook open in Google Colab step through each of the code blocks to review analysis.
 ---
 
 ## Contributors
