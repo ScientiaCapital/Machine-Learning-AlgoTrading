@@ -2,7 +2,7 @@
 
 This notebook consists of analyzing the cumulative returns of two different machine learning algorithms for AlgoTrading.
 
-![Machine_Learning_AlgoTrading]()
+![Machine_Learning_AlgoTrading](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/AlgoBot.jpeg)
 
 ---
 
