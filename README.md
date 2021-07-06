@@ -66,7 +66,7 @@ In the below plots, the SVM and LR Strategy outperforms the Tuned model from mid
 ![Example_Three](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.27.35%20PM.png)
 
 
-## Strategy Returns - SVM and LR Strategy 
+## Actual - SVM and LR Strategy 
 
 ![Example_Four](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.25.15%20PM.png)
 
