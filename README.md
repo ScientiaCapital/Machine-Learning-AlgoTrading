@@ -45,9 +45,11 @@ from sklearn.metrics import classification_report
 
 ## Examples
 
-![Example_One]()
+![Example_One](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.28.24%20PM.png)
 
-![Example_Two]()
+![Example_Two](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.27.58%20PM.png)
+
+![Example_Three](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.26.28%20PM.png)
 
 ---
 
@@ -55,18 +57,18 @@ from sklearn.metrics import classification_report
 
 Within this notebook, two machine learning algorithms (SVC classifier model and Decision Tree) were carried out for the purpose of evaluating their effectiveness within the realm of algorithmic trading. For the sake of consistency and effective analysis, the long and short trading windows retained their size across both algorithms and the training / testing data remained identical. The plot below showcases the cumulative returns of both the SVC classifier model and Decision Tree model across the same time period. From this, we can conclude that the trading strategy based off of the SVC model proves to be much more effective in generating cumulative returns for the OHLVC dataset as a baseline model.
 
-For the purposes of uncovering the most profitable trading algorithm, the training timeframe was altered from 3 months to 1 months. As can be seen in the Updated Comparison plots, the Decision Tree model outperforms the SVC model prominently from mid-2018 towards the end of 2020 in terms of cumulative returns.
+In the below plots, the SVM and LR Strategy outperforms the Tuned model from mid-2018 towards the end of 2020 in terms of cumulative returns.
 
 ---
 
-## Baseline
+## Strategy Returns - Tuned 
 
-![Example_Three]()
+![Example_Three](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.27.35%20PM.png)
 
 
-## Updated Comparison
+## Strategy Returns - SVM and LR Strategy 
 
-![Example_Four]()
+![Example_Four](https://github.com/ScientiaCapital/Machine-Learning-AlgoTrading/blob/main/Images/Screen%20Shot%202021-07-05%20at%208.25.15%20PM.png)
 
 ---
 
