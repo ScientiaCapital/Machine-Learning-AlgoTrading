@@ -32,17 +32,12 @@ With your _Python 3.7+_ environment, run the following commands via CLI:
 import pandas as pd
 import numpy as np
 from pathlib import Path
-import hvplot.pandas as hv
+import hvplot.pandas
 import matplotlib.pyplot as plt
-from holoviews.ipython import display
 from sklearn import svm
-from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
 from pandas.tseries.offsets import DateOffset
 from sklearn.metrics import classification_report
-import datetime as dt
-from finta import TA
-from sklearn.linear_model import LogisticRegression
 
 ```
 
