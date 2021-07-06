@@ -55,7 +55,7 @@ from sklearn.metrics import classification_report
 
 ## Conclusion
 
-Within this notebook, two machine learning algorithms (SVC classifier model and Decision Tree) were carried out for the purpose of evaluating their effectiveness within the realm of algorithmic trading. For the sake of consistency and effective analysis, the long and short trading windows retained their size across both algorithms and the training / testing data remained identical. The plot below showcases the cumulative returns of both the SVC classifier model and Decision Tree model across the same time period. From this, we can conclude that the trading strategy based off of the SVC model proves to be much more effective in generating cumulative returns for the OHLVC dataset as a baseline model.
+Within this notebook, two machine learning algorithms were carried out for the purpose of evaluating their effectiveness for algorithmic trading. The long and short trading windows retained their size across both algorithms and the training / testing data remained somewhat identical. The plots below showcase the cumulative returns of both models across the same time period. From this, we can conclude that the trading strategy proves to be much more effective in generating cumulative returns for the OHLVC dataset as a baseline model.
 
 In the below plots, the SVM and LR Strategy outperforms the Tuned model from mid-2018 towards the end of 2020 in terms of cumulative returns.
 
